@@ -13,6 +13,7 @@ import UIKit
 protocol FileManagerServiceProtocol {
     func allFiles() -> [String?]
     func addPhoto(photo: UIImage, name: String?)
+    
 }
 
 

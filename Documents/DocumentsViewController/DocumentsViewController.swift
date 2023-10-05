@@ -8,7 +8,6 @@
 import UIKit
 import PhotosUI
 
-var fille: [String] = []
 
 final class DocumentsViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
