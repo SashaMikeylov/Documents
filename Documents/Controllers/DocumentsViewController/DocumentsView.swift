@@ -33,12 +33,11 @@ final class DocumentsView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-//MARK: -Func
+//MARK: - Layot
     
     private func layout() {
         
         addSubview(tableDocumentsView)
-        
         
         NSLayoutConstraint.activate([
             tableDocumentsView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
@@ -47,6 +46,8 @@ final class DocumentsView: UIView {
             tableDocumentsView.trailingAnchor.constraint(equalTo: trailingAnchor),
         ])
     }
+    
+//MARK: - Table settings
     
     func tableSettings(dataSource: UITableViewDataSource, delegate: UITableViewDelegate) {
         
@@ -58,6 +59,5 @@ final class DocumentsView: UIView {
     func reloadTable() {
         tableDocumentsView.reloadData()
     }
-    
 }
 

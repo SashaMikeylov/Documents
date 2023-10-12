@@ -13,13 +13,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let scene = (scene as? UIWindowScene) else { return }
+        let tabBarController = UITabBarController()
+        tabBarController.tabBar.backgroundColor = .systemGray6
         
-       
+       // let authorizationViewController = AuthorizationViewController()
+        let documentsViweController = AuthorizationViewController()
+        let settingViwController = SettingsViewController()
+        documentsViweController.tabBarItem = UITabBarItem(title: "Files", image: UIImage(named: "documentsIcon"), tag: 0)
+        settingViwController.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(named: "settingsIcon"), tag: 1)
+        let controllers = [documentsViweController, settingViwController]
+    
+        tabBarController.viewControllers = controllers.map {
+            UINavigationController(rootViewController: $0)
+        }
+        
+        guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene)
-        let viewController = DocumentsViewController()
-        let navigationController = UINavigationController(rootViewController: viewController)
-        window.rootViewController = navigationController
+        window.rootViewController = tabBarController
         self.window = window
         window.makeKeyAndVisible()
     }
