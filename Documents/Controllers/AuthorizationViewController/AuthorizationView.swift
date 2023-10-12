@@ -119,7 +119,7 @@ final class AuthorizationView: UIView {
         if state == .notAuthoriz {
             passwordButton.setTitle("Create password", for: .normal)
         } else if state == .savedPassword {
-            passwordButton.setTitle("Escape password", for: .normal)
+            passwordButton.setTitle("Enter password", for: .normal)
         }
     }
     
