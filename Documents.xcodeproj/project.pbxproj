@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24EB90692AD196AF0044AF03 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB90682AD196AF0044AF03 /* AuthorizationViewController.swift */; };
+		24EB906B2AD196F90044AF03 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB906A2AD196F90044AF03 /* AuthorizationView.swift */; };
+		24EB906E2AD33CC90044AF03 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB906D2AD33CC90044AF03 /* DetailsViewController.swift */; };
+		24EB90712AD34F320044AF03 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB90702AD34F320044AF03 /* SettingsViewController.swift */; };
+		24EB90732AD471BF0044AF03 /* PasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB90722AD471BF0044AF03 /* PasswordService.swift */; };
+		24EB90762AD5BA6F0044AF03 /* ButtonExtenshion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB90752AD5BA6F0044AF03 /* ButtonExtenshion.swift */; };
+		24EB90782AD5C0F70044AF03 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB90772AD5C0F70044AF03 /* Enums.swift */; };
+		24EB907B2AD6EEA60044AF03 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 24EB907A2AD6EEA60044AF03 /* KeychainSwift */; };
+		24EB907D2AD6F2ED0044AF03 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB907C2AD6F2ED0044AF03 /* SettingsView.swift */; };
+		24EB907F2AD7644F0044AF03 /* RealodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB907E2AD7644F0044AF03 /* RealodViewController.swift */; };
 		24EF2DE42ACC9FF50080C131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF2DE32ACC9FF50080C131 /* AppDelegate.swift */; };
 		24EF2DE62ACC9FF50080C131 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF2DE52ACC9FF50080C131 /* SceneDelegate.swift */; };
 		24EF2DE82ACC9FF50080C131 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF2DE72ACC9FF50080C131 /* DocumentsViewController.swift */; };
@@ -17,6 +27,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24EB90682AD196AF0044AF03 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		24EB906A2AD196F90044AF03 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		24EB906D2AD33CC90044AF03 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		24EB90702AD34F320044AF03 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		24EB90722AD471BF0044AF03 /* PasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordService.swift; sourceTree = "<group>"; };
+		24EB90752AD5BA6F0044AF03 /* ButtonExtenshion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtenshion.swift; sourceTree = "<group>"; };
+		24EB90772AD5C0F70044AF03 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		24EB907C2AD6F2ED0044AF03 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		24EB907E2AD7644F0044AF03 /* RealodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealodViewController.swift; sourceTree = "<group>"; };
 		24EF2DE02ACC9FF50080C131 /* Documents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Documents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24EF2DE32ACC9FF50080C131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24EF2DE52ACC9FF50080C131 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,12 +52,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24EB907B2AD6EEA60044AF03 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24EB90662AD1967E0044AF03 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				24EB90672AD1968F0044AF03 /* AuthorizationViewController */,
+				24EF2DF82ACCA1200080C131 /* DocumentsViewController */,
+				24EB906F2AD34F130044AF03 /* SettingsViewController */,
+				24EB906C2AD33CAA0044AF03 /* Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		24EB90672AD1968F0044AF03 /* AuthorizationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24EB90682AD196AF0044AF03 /* AuthorizationViewController.swift */,
+				24EB906A2AD196F90044AF03 /* AuthorizationView.swift */,
+				24EB90772AD5C0F70044AF03 /* Enums.swift */,
+			);
+			path = AuthorizationViewController;
+			sourceTree = "<group>";
+		};
+		24EB906C2AD33CAA0044AF03 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				24EB906D2AD33CC90044AF03 /* DetailsViewController.swift */,
+				24EB907E2AD7644F0044AF03 /* RealodViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		24EB906F2AD34F130044AF03 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24EB90702AD34F320044AF03 /* SettingsViewController.swift */,
+				24EB907C2AD6F2ED0044AF03 /* SettingsView.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		24EB90742AD5BA4B0044AF03 /* Extenshions */ = {
+			isa = PBXGroup;
+			children = (
+				24EB90752AD5BA6F0044AF03 /* ButtonExtenshion.swift */,
+			);
+			path = Extenshions;
+			sourceTree = "<group>";
+		};
 		24EF2DD72ACC9FF50080C131 = {
 			isa = PBXGroup;
 			children = (
@@ -59,8 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				24EF2DF72ACCA1040080C131 /* Resourses */,
-				24EF2DF82ACCA1200080C131 /* DocumentsViewController */,
+				24EB90662AD1967E0044AF03 /* Controllers */,
 				24EF2DFE2ACCAEF90080C131 /* Services */,
+				24EB90742AD5BA4B0044AF03 /* Extenshions */,
 				24EF2DEC2ACC9FFB0080C131 /* Assets.xcassets */,
 				24EF2DEE2ACC9FFB0080C131 /* LaunchScreen.storyboard */,
 				24EF2DF12ACC9FFB0080C131 /* Info.plist */,
@@ -90,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				24EF2DFF2ACCAF150080C131 /* FileManagerService.swift */,
+				24EB90722AD471BF0044AF03 /* PasswordService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -110,6 +179,9 @@
 			dependencies = (
 			);
 			name = Documents;
+			packageProductDependencies = (
+				24EB907A2AD6EEA60044AF03 /* KeychainSwift */,
+			);
 			productName = Documents;
 			productReference = 24EF2DE02ACC9FF50080C131 /* Documents.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +210,9 @@
 				Base,
 			);
 			mainGroup = 24EF2DD72ACC9FF50080C131;
+			packageReferences = (
+				24EB90792AD6EEA60044AF03 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 24EF2DE12ACC9FF50080C131 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,11 +239,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24EB90692AD196AF0044AF03 /* AuthorizationViewController.swift in Sources */,
 				24EF2DE82ACC9FF50080C131 /* DocumentsViewController.swift in Sources */,
 				24EF2DE42ACC9FF50080C131 /* AppDelegate.swift in Sources */,
+				24EB906E2AD33CC90044AF03 /* DetailsViewController.swift in Sources */,
 				24EF2DE62ACC9FF50080C131 /* SceneDelegate.swift in Sources */,
 				24EF2DFA2ACCAD1E0080C131 /* DocumentsView.swift in Sources */,
+				24EB906B2AD196F90044AF03 /* AuthorizationView.swift in Sources */,
 				24EF2E002ACCAF150080C131 /* FileManagerService.swift in Sources */,
+				24EB90732AD471BF0044AF03 /* PasswordService.swift in Sources */,
+				24EB90712AD34F320044AF03 /* SettingsViewController.swift in Sources */,
+				24EB90782AD5C0F70044AF03 /* Enums.swift in Sources */,
+				24EB90762AD5BA6F0044AF03 /* ButtonExtenshion.swift in Sources */,
+				24EB907D2AD6F2ED0044AF03 /* SettingsView.swift in Sources */,
+				24EB907F2AD7644F0044AF03 /* RealodViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +463,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24EB90792AD6EEA60044AF03 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24EB907A2AD6EEA60044AF03 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24EB90792AD6EEA60044AF03 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24EF2DD82ACC9FF50080C131 /* Project object */;
 }
